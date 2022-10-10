@@ -1,0 +1,63 @@
+/* Navigation bar */
+body {
+    background-color: #05A3A6;
+}
+
+.logo {
+    padding: 0;
+    margin-left: -60px;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.Movie {
+    color: black;
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.List {
+    color: black;
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.watchlist {
+    height: 35px;
+    margin-top: 6px;
+}
+
+.footer {
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container-1 {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+}
+
+/* Home Page CSS */
+
+/* Movies Page CSS */
+
+/* Sign In/Up Page CSS*/
+
+/* Single Movie Page CSS */
