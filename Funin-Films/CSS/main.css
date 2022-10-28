@@ -58,14 +58,29 @@ body {
 
 /* Movies Page CSS */
 
-/* Sign In/Up Page CSS*/
+/* Sign In/Up (Index) Page CSS*/
 
 #signemail {
     margin-bottom: 50px;
+    margin-left: 130px;
 }
 
+#signpassword {
+    margin-left: 130px;
+}
 
 #signinbtn {
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 230px;
+    height: 40px;
+}
+
+#signupbtn {
     margin: auto;
     display: block;
     margin-top: 50px;
@@ -82,12 +97,26 @@ body {
     color: white
 }
 
+#signupbtn:hover {
+    cursor: pointer;
+    background-color: #05A3A6;
+    color: white
+}
+
 #signin1 {
     background-color: #82dcdd;
 }
 
 #signup1 {
     background-color: #03787a;
+}
+
+#signup1:hover {
+    cursor: pointer;
+}
+
+#signin1:hover {
+    cursor: pointer;
 }
 
 /* Single Movie Page CSS */

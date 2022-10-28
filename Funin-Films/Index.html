@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In/Sign Up Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="CSS\main.css">
+    </head>
+
+    <body>
+
+        <a href=""><img src="Images\Logo\Logo.png" alt="" style="height: 150px; margin-left: auto; margin-top: 20px; margin-right: auto; margin-bottom: 50px; display: block;"></a>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-3" id="signin1">
+                        <h3>Sign In</h3>
+                    </div>
+                    <div class="col-sm-3" id="signup1">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-md-4" style="height: 10px;"></div>
+            <div class="col-md-4" style="background-color: #82dcdd; height: 400px">
+
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6" class="Signupblock">
+                        <label for="text" class="form-label col-sm-12 Signupblock" style="margin-top: 30px;">Username:</label>
+                        <input type="text" class="form-control Signupblock" id="upemail" placeholder="Enter Username" name="text" required>
+                        <label for="email" class="form-label col-sm-12 Signupblock" style="margin-top: 30px">Email Adress:</label>
+                        <input type="email" class="form-control Signupblock" id="upemail" placeholder="Enter Email Adress" name="email" required>
+                    </div>
+                    <div class="col-sm-6" class="Signinblock">
+                        <label for="text" class="form-label col-sm-12 Signinblock" style="margin-top: 30px; margin-left: 130px;">Username:</label>
+                        <input type="text" class="form-control Signinblock" id="signemail" placeholder="Enter Username" name="text" required>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6" class="Signupblock">
+                        <label for="password" class="form-label Signupblock" style="margin-top: 30px;" >Password:</label>
+                        <input type="password" class="form-control Signupblock" placeholder="Enter password" name="password" required>
+                        <input type="submit" value="Sign Up" id="signupbtn" class="Signupblock">
+                    </div>
+                    <div class="col-sm-6" class="Signinblock">
+                        <label for="password" class="form-label Signinblock" style="margin-left: 130px;">Password:</label>
+                        <input type="password" class="form-control Signinblock" id="signpassword" placeholder="Enter password" name="password" required>
+                        <input type="submit" value="Sign In" id="signupbtn" class="Signinblock" style="margin-left: 130px;">
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                
+
+                
+
+            </div>
+            <div class="col-md-4" style="height: 10px;"></div>
+        </div>
+
+        <footer class="bg-light text-center text-lg-start" style="margin-top: 70px;">
+            <div  style="background-color: #006373;">
+              <div class="left p-3">
+                <img src="Images\Icons\mail.png" alt="" style="height: 40px; margin-top: 25px; margin-left: 80px;">
+                <h1 style="color: black; font-size: 14pt;"> support@funinfilms.com</h1>
+              </div>
+              <div class="right p-3">
+                <h1 style="color: black; font-size: 15pt; margin-top: 20px; margin-bottom: 10px;">Connect with us</h1>
+                <img src="Images\Icons\facebook.png" alt="" style="height: 30px; margin-right: 20px;">
+                <img src="Images\Icons\Instagram.png" alt="" style="height: 30px; margin-right: 20px;">
+                <img src="Images\Icons\twitter.png" alt="" style="height: 30px;">
+              </div>
+              <div class="text-center p-3">
+                <img src="Images\Logo\Logo.png" alt="" class="footer">
+                <h1 style="color: black; font-size: 17pt;">Funin Films © 2022</h1>
+              </div>
+              
+            </div>
+          </footer>
+
+    <script src="JS\index.js"></script>
+    </body>
+</html>
