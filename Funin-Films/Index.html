@@ -48,7 +48,7 @@
                     </div>
                     <div class="col-sm-6" class="Signinblock">
                         <label for="text" class="form-label col-sm-12 Signinblock" style="margin-top: 30px; margin-left: 130px;">Username:</label>
-                        <input type="text" class="form-control Signinblock" id="signemail" placeholder="Enter Username" name="text" required>
+                        <input type="text" class="form-control Signinblock" id="user-name1" placeholder="Enter Username" name="text" required>
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
@@ -62,10 +62,11 @@
                     </div>
                     <div class="col-sm-6" class="Signinblock">
                         <label for="password" class="form-label Signinblock" style="margin-left: 130px;">Password:</label>
-                        <input type="password" class="form-control Signinblock" id="signpassword" placeholder="Enter password" name="password" required>
-                        <input type="submit" value="Sign In" id="signupbtn" class="Signinblock" style="margin-left: 130px;">
+                        <input type="text" class="form-control Signinblock" id="pass-word1" placeholder="Enter password" name="password" required>
+                        <input type="submit" value="Sign In" id="signupbtn" class="Signinblock" style="margin-left: 130px;" onclick="login ()">
                     </div>
                     <div class="col-sm-3"></div>
+                    <p id="errortext1">error message</p>
                 </div>
                 
 

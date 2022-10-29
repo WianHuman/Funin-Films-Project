@@ -60,12 +60,12 @@ body {
 
 /* Sign In/Up (Index) Page CSS*/
 
-#signemail {
+#user-name1 {
     margin-bottom: 50px;
     margin-left: 130px;
 }
 
-#signpassword {
+#pass-word1 {
     margin-left: 130px;
 }
 
@@ -117,6 +117,16 @@ body {
 
 #signin1:hover {
     cursor: pointer;
+}
+
+#errortext1 {
+    position: absolute;
+    margin-top: 200px;
+    color: #e8891d;
+    margin-left: 130px;
+    background-color: #ffffff;
+    width: 260px;
+    border-radius: 5px;
 }
 
 /* Single Movie Page CSS */
