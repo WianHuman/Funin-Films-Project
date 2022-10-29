@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Movie Library Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="CSS\main.css">
@@ -83,8 +84,92 @@
             </div>
         </nav>
 
-        <div style="height: 579px;">
+        <div style="height: 1700px;">
+          <br>
 
+          <select  name="stars" class="boxselect"  id="all" onclick="gen()">
+            <option value="all">All movies</option>
+          </select> 
+
+          <select name="stars" id="tags" onclick="gen1()">
+            <option value="">Genre</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="comedy">Comedy</option>
+          </select>
+
+          <select name="stars" id="stars" onclick="gen2()">
+            <option value="">Year</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+
+          <select name="stars" id="score"  class="boxselect"  onclick="gen3()">
+            <option value="">IMDB Score</option>
+            <option value="low">0-3</option>
+            <option value="mid">4-6</option>
+            <option value="high">7-10</option>
+          </select>
+
+          <br>
+          <br>
+          <br>
+
+          <div class="container">
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item0"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item1"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item2"  class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item3"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item4"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item5"  class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item6"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item7"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item8"  class="img-fluid"></div>
+            </div>
+            <div class="row  justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item9"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item10"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item11"  class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item12" class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item13"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item14" class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item15"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item16" class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item17"  class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item18"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item19"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item01" class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly mb-3">
+              <div class="col-sm-3"><img id="item02"  class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item03" class="img-fluid"></div>
+              <div class="col-sm-3"><img id="item04"  class="img-fluid"></div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-sm-3"><img id="item05"  class="img-fluid"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          
         </div>
   
         <footer class="bg-light text-center text-lg-start">

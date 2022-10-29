@@ -58,6 +58,39 @@ body {
 
 /* Movies Page CSS */
 
+#all {
+    color: #E8891D;
+    background-color: #006373;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 3px;
+    margin-left: 500px;
+}
+
+#tags {
+    color: #E8891D;
+    background-color: #006373;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 3px;
+}
+
+#stars {
+    color: #E8891D;
+    background-color: #006373;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 3px;
+}
+
+#score {
+    color: #E8891D;
+    background-color: #006373;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 3px;
+}
+
 /* Sign In/Up (Index) Page CSS*/
 
 #user-name1 {
