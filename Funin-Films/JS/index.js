@@ -81,6 +81,8 @@ function login () {
 
 
 // Home page js
+
+
 // Movie library js
     $(document).ready(function(){
         var movies = null;
@@ -492,5 +494,10 @@ function login () {
     }
 
 // Movie Watchlist js
+
+
 // Single Movue js
+
+
 // Additional all-page js
+
