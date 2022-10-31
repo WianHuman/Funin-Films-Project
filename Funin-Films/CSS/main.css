@@ -180,7 +180,6 @@ body {
     font-weight: bold;
     font-size: 14pt;
     padding: 3px;
-    margin-left: 500px;
 }
 
 #tags {
@@ -205,6 +204,25 @@ body {
     font-weight: bold;
     font-size: 14pt;
     padding: 3px;
+}
+
+.iconlb,.iconlb1,.iconlb2,.iconlb3,.iconlb4,.iconlb5,.iconlb6,.iconlb7,.iconlb8,.iconlb9,.iconlb10,
+.iconlb11,.iconlb12,.iconlb13,.iconlb14,.iconlb15,.iconlb16,.iconlb17,.iconlb18,.iconlb19,
+.iconlb01,.iconlb02,.iconlb03,.iconlb04,.iconlb05 {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 374px;
+    padding-left: 3px;
+    background-color: #e8891da9;
+    border-radius: 0;
+    opacity: 0;
+    transition-duration: 400ms;
+}
+
+.iconlb:hover,.iconlb1:hover,.iconlb2:hover,.iconlb3:hover,.iconlb4:hover,.iconlb5:hover,.iconlb6:hover,.iconlb7:hover,.iconlb8:hover,.iconlb9:hover,.iconlb10:hover,
+.iconlb11:hover,.iconlb12:hover,.iconlb13:hover,.iconlb14:hover,.iconlb15:hover,.iconlb16:hover,.iconlb17:hover,.iconlb18:hover,.iconlb19:hover,
+.iconlb01:hover,.iconlb02:hover,.iconlb03:hover,.iconlb04:hover,.iconlb05:hover {
+    opacity: 1;
 }
 
 /* Sign In/Up (Index) Page CSS*/

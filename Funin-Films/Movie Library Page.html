@@ -12,9 +12,9 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
             <div class="container-fluid"  style="background-color: #006373;">
-              <a class="navbar-brand mt-2 mt-lg-0" href="Home page.html">
+              <a class="navbar-brand mt-2 mt-sm-0" href="Home page.html">
                 <img
                 src="Images\Logo\Logo.png"
                 height="70"
@@ -46,7 +46,7 @@
                 <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-sm-0">
                   <li class="nav-item">
                     <a class="nav-link Movie" aria-current="page" href="Movie Library Page.html">Movies</a>
                   </li>
@@ -72,7 +72,7 @@
                 <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-current="page" href="#" style="color: #006373;">Home</a>
                   </li>
@@ -87,110 +87,345 @@
         <div style="height: 1700px;">
           <br>
 
-          <select  name="stars" class="boxselect"  id="all" onclick="gen()">
-            <option value="all">All movies</option>
-          </select> 
-
-          <select name="stars" id="tags" onclick="gen1()">
-            <option value="">Genre</option>
-            <option value="action">Action</option>
-            <option value="adventure">Adventure</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="comedy">Comedy</option>
-          </select>
-
-          <select name="stars" id="stars" onclick="gen2()">
-            <option value="">Year</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-          </select>
-
-          <select name="stars" id="score"  class="boxselect"  onclick="gen3()">
-            <option value="">IMDB Score</option>
-            <option value="low">0-3</option>
-            <option value="mid">4-6</option>
-            <option value="high">7-10</option>
-          </select>
+          <div class="row justify-content-center">
+            <div class="col-sm-2">
+              <select  name="stars" class="boxselect"  id="all" onclick="gen()">
+                <option value="all">All movies</option>
+              </select> 
+            </div>
+            
+            <div class="col-sm-2">
+              <select name="stars" id="tags" onclick="gen1()">
+                <option value="">Genre</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="comedy">Comedy</option>
+              </select>
+            </div>
+            
+            <div class="col-sm-2">
+              <select name="stars" id="stars" onclick="gen2()">
+                <option value="">Year</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </div>
+            
+            <div class="col-sm-2">
+              <select name="stars" id="score"  class="justify-content-center"  onclick="gen3()">
+                <option value="">IMDB Score</option>
+                <option value="low">0-3</option>
+                <option value="mid">4-6</option>
+                <option value="high">7-10</option>
+              </select>
+            </div>
+          </div>
 
           <br>
           <br>
           <br>
 
           <div class="container">
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item0"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item1"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item2"  class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item3"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item4"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item5"  class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item6"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item7"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item8"  class="img-fluid"></div>
-            </div>
-            <div class="row  justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item9"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item10"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item11"  class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item12" class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item13"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item14" class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item15"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item16" class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item17"  class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item18"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item19"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item01" class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly mb-3">
-              <div class="col-sm-3"><img id="item02"  class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item03" class="img-fluid"></div>
-              <div class="col-sm-3"><img id="item04"  class="img-fluid"></div>
-            </div>
-            <div class="row justify-content-evenly">
-              <div class="col-sm-3"><img id="item05"  class="img-fluid"></div>
-              <div class="col-sm-3"></div>
-              <div class="col-sm-3"></div>
+            <div class="card-deck">
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item0" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info0" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item1" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb1">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info1" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item2" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb2">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info2" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item3" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb3">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info3" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item4" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb4">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info4" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item5" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb5">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info5" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item6" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb6">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info6" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item7" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb7">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info7" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item8" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb8">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info8" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item9" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb9">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info9" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item10" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb10">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info10" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item11" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb11">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info11" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item12" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb12">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info12" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item13" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb13">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info13" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item14" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb14">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info14" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item15" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb15">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info15" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item16" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb16">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info16" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item17" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb17">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info17" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item18" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb18">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info18" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item19" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb19">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info19" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item01" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb01">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info01" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item02" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb02">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info02" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item03" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb03">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info03" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item04" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb04">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info04" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mb-5" style="height: 440px;">
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;">
+                  <img class="card-img" id="item05" alt="Card image cap" style="border-radius: 0; height: 440px;">
+                  <div>
+                    <div class="card-img-overlay iconlb05">
+                      <img src="Images\Icons\add_to_watch_list.png" alt="" height="40">
+                      <img src="Images\Icons\more_inf_1.png" alt="" height="40">
+                      <h6 class="card-title" id="info05" style="text-align: right;"></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;"></div>
+                <div class="card col-sm-3" style="background-color: #05A3A6; border: none;"></div>
+              </div>
             </div>
           </div>
 
           <br>
-          <br>
-          
+
+          <footer class="bg-light text-center text-lg-start">
+            <div  style="background-color: #006373;">
+              <div class="left p-3">
+                <img src="Images\Icons\mail.png" alt="" style="height: 40px; margin-top: 25px; margin-left: 80px;">
+                <h1 style="color: black; font-size: 14pt;"> support@funinfilms.com</h1>
+              </div>
+              <div class="right p-3">
+                <h1 style="color: black; font-size: 15pt; margin-top: 20px; margin-bottom: 10px;">Connect with us</h1>
+                <img src="Images\Icons\facebook.png" alt="" style="height: 30px; margin-right: 20px;">
+                <img src="Images\Icons\Instagram.png" alt="" style="height: 30px; margin-right: 20px;">
+                <img src="Images\Icons\twitter.png" alt="" style="height: 30px;">
+              </div>
+              <div class="text-center p-3">
+                <img src="Images\Logo\Logo.png" alt="" class="footer">
+                <h1 style="color: black; font-size: 17pt;">Funin Films © 2022</h1>
+              </div>
+              
+            </div>
+          </footer>
         </div>
-  
-        <footer class="bg-light text-center text-lg-start">
-          <div  style="background-color: #006373;">
-            <div class="left p-3">
-              <img src="Images\Icons\mail.png" alt="" style="height: 40px; margin-top: 25px; margin-left: 80px;">
-              <h1 style="color: black; font-size: 14pt;"> support@funinfilms.com</h1>
-            </div>
-            <div class="right p-3">
-              <h1 style="color: black; font-size: 15pt; margin-top: 20px; margin-bottom: 10px;">Connect with us</h1>
-              <img src="Images\Icons\facebook.png" alt="" style="height: 30px; margin-right: 20px;">
-              <img src="Images\Icons\Instagram.png" alt="" style="height: 30px; margin-right: 20px;">
-              <img src="Images\Icons\twitter.png" alt="" style="height: 30px;">
-            </div>
-            <div class="text-center p-3">
-              <img src="Images\Logo\Logo.png" alt="" class="footer">
-              <h1 style="color: black; font-size: 17pt;">Funin Films © 2022</h1>
-            </div>
-            
-          </div>
-        </footer>
 
     <script src="JS\index.js"></script>
     </body>
