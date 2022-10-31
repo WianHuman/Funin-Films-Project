@@ -56,19 +56,47 @@ body {
 
 /* Home Page CSS */
 
+#welcome{
+    margin-bottom: 20px;
+}
+
 #slider{
+    background: linear-gradient(0deg, #2a2f39 0%, #33364a 100%);
+    padding: 0;
+    height: 580px;
     margin-bottom: 15px;
 }
 
 #slider_text{
+    margin-top: 300px;
     width: 500px;
 }
 
-#category{
-    background-color: #006373;
+#play_btn{
+    width: 105px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+#add_btn{
+    width: 80px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 0px;
+}
+
+#btn_left{
     height: 50px;
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 200px;
+}
+
+#btn_right{
+    height: 50px;
+    margin-top: 200px;
 }
 
 #box2{
