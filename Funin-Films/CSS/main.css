@@ -60,6 +60,41 @@ body {
     margin-bottom: 20px;
 }
 
+.text {
+    padding-bottom: 10px;
+    font-size: 30pt;
+    color: black;
+}
+
+.text2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30pt;
+    color: black;
+}
+
+.text3 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30pt;
+    color: black;
+}
+
+.iconl,.iconl1,.iconl2,.iconl3,.iconl4,.iconl5,.iconl8,.iconl7 {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 260px;
+    padding-left: 3px;
+    background-color: #e8891da9;
+    border-radius: 0;
+    opacity: 0;
+    transition-duration: 400ms;
+}
+
+.iconl:hover,.iconl1:hover,.iconl2:hover,.iconl3:hover,.iconl4:hover,.iconl5:hover,.iconl8:hover,.iconl7:hover {
+    opacity: 1;
+}
+
 #slider{
     background: linear-gradient(0deg, #2a2f39 0%, #33364a 100%);
     padding: 0;
