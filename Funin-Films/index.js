@@ -137,6 +137,12 @@ function login () {
                 for( let h = 0; h < 4; h++){
                     $("#pic" + h).attr("src", "https://image.tmdb.org/t/p/original/" + Movie.results[h].poster_path);
                     $("#more" + h).text(Movie.results[h].release_date + " • ±120 min" + " • " + Movie.results[h].original_language + " • " + Math.round(Movie.results[h].vote_average));
+                    $("#wlr" + h).click(function (){
+                        var mid = Movie.results[h].id
+                        var currentid = JSON.stringify(mid)
+                        sessionStorage.setItem("savedmovie1",currentid)
+                        // alert(currentid)
+                    })
                 }
             })
         });
@@ -155,6 +161,12 @@ function login () {
                 for( let b = 12; b < 18; b++){
                     $("#picr" + b).attr("src", "https://image.tmdb.org/t/p/original/" + Movie.results[b].poster_path);
                     $("#morer" + b).text(Movie.results[b].release_date + " • ±120 min" + " • " + Movie.results[b].original_language + " • " + Math.round(Movie.results[b].vote_average));
+                    $("#wlp" + b).click(function (){
+                        var mid = Movie.results[b].id
+                        var currentid = JSON.stringify(mid)
+                        sessionStorage.setItem("savedmovie2",currentid)
+                        // alert(currentid)
+                    })
                 }
             })
         });
@@ -182,21 +194,12 @@ function login () {
             for (let i = 0; i < 20; i++){
             $("#item" + i).attr("src", "https://image.tmdb.org/t/p/original/" + movies.results[i].poster_path);
             $("#info" + i).text(movies.results[i].release_date + " • ±120 min" + " • " + movies.results[i].original_language + " • " + Math.round(movies.results[i].vote_average));
-            // $("#movieid" + i).text(movies.results[i].id);
-
-            // $(".iconlb" + i).click(function (){
-            //     var mid = movies.results[i].id
-            //     var currentid = JSON.stringify(mid)
-            //     sessionStorage.setItem("currentmovie",currentid)
-            //     // console.log(currentid)
-            // })
-
-            // $(".wl" + i).click(function (){
-            //     var mid = movies.results[i].id
-            //     var currentid = JSON.stringify(mid)
-            //     sessionStorage.setItem("savedmovie",currentid)
-            //     // alert(currentid)
-            // })
+            $("#wll" + i).click(function (){
+                var mid = movies.results[i].id
+                var currentid = JSON.stringify(mid)
+                sessionStorage.setItem("savedmovie3",currentid)
+                // alert(currentid)
+            })
             }
         });
         // API call for 5 movies
@@ -213,6 +216,12 @@ function login () {
             }).done(function(){
                 $("#item0" + r).attr("src", "https://image.tmdb.org/t/p/original/" + movies.poster_path);
                 $("#info0" + r).text(movies.release_date + " • " + movies.runtime + " min" + " • " + movies.original_language + " • " + Math.round(movies.vote_average));
+                $("#wll0" + r).click(function (){
+                    var mid = movies.id
+                    var currentid = JSON.stringify(mid)
+                    sessionStorage.setItem("savedmovie4",currentid)
+                    // alert(currentid)
+                })
             });
         }    
     });
@@ -619,27 +628,89 @@ function login () {
 
 // Movie Watchlist js
 
-$(document).ready(function (){
-    
-    var savedmovieid = JSON.parse(sessionStorage.getItem("savedmovie"))
-    // alert(savedmovieid)
+    $(document).ready(function (){
+        // Display selected Movie
+        var savedmovieid = JSON.parse(sessionStorage.getItem("savedmovie"))
+        
+        let call = "https://api.themoviedb.org/3/movie/" + savedmovieid + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+        $.ajax({
+            type: "GET",
+            url: call,
+            success: function(data){
+                movies = data;
+                console.log(data)
+            }
+        }).done(function (){
+            $("#wlmv1").text(movies.title)
+            $("#wlmv0").attr("src", "https://image.tmdb.org/t/p/original/" + movies.poster_path);
+            $("#wlmv2").text(movies.release_date + " • " + movies.runtime + " min" + " • " + movies.original_language + " • " + Math.round(movies.vote_average));
+        });
 
-    let call = "https://api.themoviedb.org/3/movie/" + savedmovieid + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
-    $.ajax({
-        type: "GET",
-        url: call,
-        success: function(data){
-            movies = data;
-            console.log(data)
-        }
-    }).done(function (){
-        $("#wlmv1").text(movies.title)
-        $("#wlmv0").attr("src", "https://image.tmdb.org/t/p/original/" + movies.poster_path);
-        $("#wlmv2").text(movies.release_date + " • " + movies.runtime + " min" + " • " + movies.original_language + " • " + Math.round(movies.vote_average));
-    })
-            
-})
+        var savedmovieid1 = JSON.parse(sessionStorage.getItem("savedmovie1"))
+        
+        let call1 = "https://api.themoviedb.org/3/movie/" + savedmovieid1 + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+        $.ajax({
+            type: "GET",
+            url: call1,
+            success: function(data){
+                movies1 = data;
+                console.log(data)
+            }
+        }).done(function (){
+            $("#wlm3").text(movies1.title)
+            $("#wlm4").attr("src", "https://image.tmdb.org/t/p/original/" + movies1.poster_path);
+            $("#wlm5").text(movies1.release_date + " • " + movies1.runtime + " min" + " • " + movies1.original_language + " • " + Math.round(movies1.vote_average));
+        });
 
+        var savedmovieid2 = JSON.parse(sessionStorage.getItem("savedmovie2"))
+        
+        let call2 = "https://api.themoviedb.org/3/movie/" + savedmovieid2 + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+        $.ajax({
+            type: "GET",
+            url: call2,
+            success: function(data){
+                movies2 = data;
+                console.log(data)
+            }
+        }).done(function (){
+            $("#wlm6").text(movies2.title)
+            $("#wlm7").attr("src", "https://image.tmdb.org/t/p/original/" + movies2.poster_path);
+            $("#wlm8").text(movies2.release_date + " • " + movies2.runtime + " min" + " • " + movies2.original_language + " • " + Math.round(movies2.vote_average));
+        });
+
+        var savedmovieid3 = JSON.parse(sessionStorage.getItem("savedmovie3"))
+        
+        let call3 = "https://api.themoviedb.org/3/movie/" + savedmovieid3 + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+        $.ajax({
+            type: "GET",
+            url: call3,
+            success: function(data){
+                movies3 = data;
+                console.log(data)
+            }
+        }).done(function (){
+            $("#wlm9").text(movies3.title)
+            $("#wlm10").attr("src", "https://image.tmdb.org/t/p/original/" + movies3.poster_path);
+            $("#wlm11").text(movies3.release_date + " • ±120 min" + " • " + movies3.original_language + " • " + Math.round(movies3.vote_average));
+        });
+
+        var savedmovieid4 = JSON.parse(sessionStorage.getItem("savedmovie4"))
+        
+        let call4 = "https://api.themoviedb.org/3/movie/" + savedmovieid4 + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+        $.ajax({
+            type: "GET",
+            url: call4,
+            success: function(data){
+                movies4 = data;
+                console.log(data)
+            }
+        }).done(function (){
+            $("#wlm9").text(movies4.title)
+            $("#wlm10").attr("src", "https://image.tmdb.org/t/p/original/" + movies4.poster_path);
+            $("#wlm11").text(movies4.release_date + " • ±120 min" + " • " + movies4.original_language + " • " + Math.round(movies4.vote_average));
+        });
+        
+    });
 
 // Single Movue js
 
