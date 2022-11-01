@@ -12,76 +12,77 @@
     </head>
 
     <body>
+      <div id="box2">
         <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
-            <div class="container-fluid"  style="background-color: #006373;">
-              <a class="navbar-brand mt-2 mt-sm-0" href="Home page.html">
-                <img
-                src="Images\Logo\Logo.png"
-                height="70"
-                alt="Funin Films Logo"
-              />
-              </a>
-              <button
+          <div class="container-fluid"  style="background-color: #006373;">
+            <a class="navbar-brand mt-2 mt-sm-0" href="Home page.html">
+              <img
+              src="Images\Logo\Logo.png"
+              height="70"
+              alt="Funin Films Logo"
+            />
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="container-fluid" style="background-color: #006373; height: 80px;">
+            <button
               class="navbar-toggler"
               type="button"
               data-mdb-toggle="collapse"
-              data-mdb-target="#navbarNav"
-              aria-controls="navbarNav"
+              data-mdb-target="#navbarCenteredExample"
+              aria-controls="navbarCenteredExample"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              >
+            >
               <i class="fas fa-bars"></i>
-              </button>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+              <ul class="navbar-nav mb-2 mb-sm-0">
+                <li class="nav-item">
+                  <a class="nav-link Movie" aria-current="page" href="Movie Library Page.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link List" href="Movie Wachlist Page.html">Watch</a>
+                </li>
+                <li class="nav-item">
+                  <img src="Images\Icons\List.png" alt="list" class="watchlist">
+                </li>
             </div>
-            <div class="container-fluid" style="background-color: #006373; height: 80px;">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarCenteredExample"
-                aria-controls="navbarCenteredExample"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-                <ul class="navbar-nav mb-2 mb-sm-0">
-                  <li class="nav-item">
-                    <a class="nav-link Movie" aria-current="page" href="Movie Library Page.html">Movies</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link List" href="Movie Wachlist Page.html">Watch</a>
-                  </li>
-                  <li class="nav-item">
-                    <img src="Images\Icons\List.png" alt="list" class="watchlist">
-                  </li>
-              </div>
+          </div>
+          <div class="container-fluid" style="background-color: #006373; height: 80px;">
+            <a class="navbar-brand disabled" href="#" style="color: #006373;">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-current="page" href="#" style="color: #006373;">Home</a>
+                </li>
+              </ul>
+              <form class="d-flex input-group w-auto">
+                <a href="index.html"><button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark" style="background-color: white; color: black; border: 2px solid black; border-radius: 25px; font-weight: bold; height: 40px;" ><p id="signeduser">Username</p></button></a>
+              </form>
             </div>
-            <div class="container-fluid" style="background-color: #006373; height: 80px;">
-              <a class="navbar-brand disabled" href="#" style="color: #006373;">Navbar</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-current="page" href="#" style="color: #006373;">Home</a>
-                  </li>
-                </ul>
-                <form class="d-flex input-group w-auto">
-                  <a href="index.html"><button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark" style="background-color: white; color: black; border: 2px solid black; border-radius: 25px; font-weight: bold;" ><p id="signeduser">Username</p></button></a>
-                </form>
-              </div>
-            </div>
+          </div>
         </nav>
 
         <div style="height: 1700px;">
@@ -414,9 +415,9 @@
               </div>
               <div class="right p-3">
                 <h1 style="color: black; font-size: 15pt; margin-top: 20px; margin-bottom: 10px;">Connect with us</h1>
-                <img src="Images\Icons\facebook.png" alt="" style="height: 30px; margin-right: 20px;">
-                <img src="Images\Icons\Instagram.png" alt="" style="height: 30px; margin-right: 20px;">
-                <img src="Images\Icons\twitter.png" alt="" style="height: 30px;">
+                <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" style="height: 30px; margin-right: 20px;"></a>
+              <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" style="height: 30px; margin-right: 20px;"></a>
+              <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" style="height: 30px;"></a>
               </div>
               <div class="text-center p-3">
                 <img src="Images\Logo\Logo.png" alt="" class="footer">
@@ -426,6 +427,8 @@
             </div>
           </footer>
         </div>
+      </div>
+        
 
     <script src="JS\index.js"></script>
     </body>

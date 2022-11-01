@@ -97,8 +97,8 @@ function login () {
     // API Newly released Movies
         $(document).ready(function(){
             var Movie = null;
-            let randomitems = Math.floor(Math.random()*500);
-            let call = "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&primary_release_year=2020&page=" + randomitems;
+            let randomitems = Math.floor(Math.random()*20);
+            let call = "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&primary_release_year=2020&page=2";
             $.ajax({
                 type: "GET",
                 url: call,
@@ -107,9 +107,11 @@ function login () {
                     console.log(data)
                 }
             }).done(function(){
-                for( let t = 0; t < 4; t++){
+                for( let t = 0; t < 21; t++){
                     $("#slide" + t).attr("src", "https://image.tmdb.org/t/p/original/" + Movie.results[t].backdrop_path);
-                    // $("#more" + h).text(Movie.results[h].release_date + " • ±120 min" + " • " + Movie.results[h].original_language + " • " + Math.round(Movie.results[h].vote_average));
+                    $("#title" + t).text(Movie.results[t].title);
+                    $("#overview" + t).text(Movie.results[t].overview);
+                    $("#rating" + t).text("Viewer rating: " + Math.round(Movie.results[t].vote_average));
                 }
             })
         });
@@ -118,11 +120,9 @@ function login () {
     // API Popular Movies
         $(document).ready(function(){
             var Movie = null;
-            let randomitems = Math.floor(Math.random()*500);
-            let call = "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&sort_by=popularity.des&page=" + randomitems;
             $.ajax({
                 type: "GET",
-                url: call,
+                url: "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&sort_by=popularity.desc",
                 success: function(data){
                     Movie = data;
                     console.log(data)
@@ -138,17 +138,15 @@ function login () {
     // API Top Rated Movies
         $(document).ready(function(){
             var Movie = null;
-            let randomitems = Math.floor(Math.random()*500);
-            let call = "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&sort_by=revenue.desc&page=" + randomitems;
             $.ajax({
                 type: "GET",
-                url:  call,
+                url:  "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&certification=R&sort_by=vote_average.desc&page=3",
                 success: function(data){
                     Movie = data;
                     console.log(data)
                 }
             }).done(function(){
-                for( let b = 0; b < 4; b++){
+                for( let b = 12; b < 18; b++){
                     $("#picr" + b).attr("src", "https://image.tmdb.org/t/p/original/" + Movie.results[b].poster_path);
                     $("#morer" + b).text(Movie.results[b].release_date + " • ±120 min" + " • " + Movie.results[b].original_language + " • " + Math.round(Movie.results[b].vote_average));
                 }
@@ -360,7 +358,7 @@ function login () {
             })
         }
 
-    // Filter for Spesifis year
+    // Filter for Spesific year
         function gen2(){
             $(document).ready(function(){
                 var movies = null;
