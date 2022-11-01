@@ -104,7 +104,7 @@ function login () {
                 url: call,
                 success: function(data){
                     Movie = data;
-                    console.log(data)
+                    // console.log(data)
                 }
             }).done(function(){
                 for( let t = 0; t < 21; t++){
@@ -125,7 +125,7 @@ function login () {
                 url: "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&sort_by=popularity.desc",
                 success: function(data){
                     Movie = data;
-                    console.log(data)
+                    // console.log(data)
                 }
             }).done(function(){
                 for( let h = 0; h < 4; h++){
@@ -143,7 +143,7 @@ function login () {
                 url:  "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&certification=R&sort_by=vote_average.desc&page=3",
                 success: function(data){
                     Movie = data;
-                    console.log(data)
+                    // console.log(data)
                 }
             }).done(function(){
                 for( let b = 12; b < 18; b++){
@@ -178,6 +178,21 @@ function login () {
             for (let i = 0; i < 20; i++){
             $("#item" + i).attr("src", "https://image.tmdb.org/t/p/original/" + movies.results[i].poster_path);
             $("#info" + i).text(movies.results[i].release_date + " • ±120 min" + " • " + movies.results[i].original_language + " • " + Math.round(movies.results[i].vote_average));
+            // $("#movieid" + i).text(movies.results[i].id);
+
+            $(".iconlb" + i).click(function (){
+                var mid = movies.results[i].id
+                var currentid = JSON.stringify(mid)
+                sessionStorage.setItem("currentmovie",currentid)
+                // console.log(currentid)
+            })
+
+            $(".wl" + i).click(function (){
+                var mid = movies.results[i].id
+                var currentid = JSON.stringify(mid)
+                sessionStorage.setItem("savedmovie",currentid)
+                // alert(currentid)
+            })
             }
         });
         // API call for 5 movies
@@ -195,7 +210,7 @@ function login () {
                 $("#item0" + r).attr("src", "https://image.tmdb.org/t/p/original/" + movies.poster_path);
                 $("#info0" + r).text(movies.release_date + " • " + movies.runtime + " min" + " • " + movies.original_language + " • " + Math.round(movies.vote_average));
             });
-        }
+        }    
     });
 
     // Filter for all movies
@@ -599,6 +614,25 @@ function login () {
         }
 
 // Movie Watchlist js
+
+$(document).ready(function (){
+    
+    var savedmovieid = JSON.parse(sessionStorage.getItem("savedmovie"))
+    // alert(savedmovieid)
+
+    let call = "https://api.themoviedb.org/3/movie/" + savedmovieid + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+    $.ajax({
+        type: "GET",
+        url: call,
+        success: function(data){
+            movies = data;
+            console.log(data)
+        }
+    }).done(function (){
+        $("#wlmv1").text(movies.title)
+    })
+            
+})
 
 
 // Single Movue js
