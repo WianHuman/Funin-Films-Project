@@ -32,12 +32,24 @@ $(document).ready(function(){
 
 var UsEr = [
     {
-        username: "Test1",
-        password: "12345"
+        username: "Wian Human",
+        password: "221286"
     },
     {
-        username: "Test2",
-        password: "12345"
+        username: "Marine Du Plessis",
+        password: "221326"
+    },
+    {
+        username: "Kyle Shilubane",
+        password: "221282"
+    },
+    {
+        username: "Cailyn Borman",
+        password: "123456"
+    },
+    {
+        username: "Animie van Rooyen",
+        password: "123456"
     }
 ]
 
@@ -70,7 +82,8 @@ function login () {
         var saveduser = JSON.parse(sessionStorage.getItem("loggedin"))
         location.replace("Home page.html")
         // alert(saveduser.username)
-        // !!!use saveduser.username to display current user's username on your page using js or jquery!!!
+        // to display username on page use var saveduser = JSON.parse(sessionStorage.getItem("loggedin"))
+        // use saveduser.username to display current user's username on your page using js or jquery!!!
     }else {
         $("#errortext1").show()
         $("#errortext1").html("Incorrect Username or Password")
@@ -120,6 +133,13 @@ function login () {
             }
         })
     });
+
+    // API for adding username to page
+    $(document).ready(function (){
+        var saveduser = JSON.parse(sessionStorage.getItem("loggedin"))
+        $("#welcome").text("Welcome " + saveduser.username)
+        $("#signeduser").html("<p style = " + "margin = 0;>" + saveduser.username + "</p>")
+    })
 
 
 // Movie library js
