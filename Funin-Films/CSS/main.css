@@ -261,3 +261,55 @@ body {
 .icon4:hover,.icon5:hover,.icon8:hover,.icon7:hover {
     opacity: 1;
 }
+
+/* Single Movie Page Css */
+
+.button {
+    color: #05A3A6;
+    padding: 8px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #05A3A6; 
+    color: black;
+    border-radius: 50px;
+}
+  
+.button {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 2px solid #05A3A6;
+}
+  
+.button:hover {
+    background-color: #05A3A6;
+    color: #ffffff;
+}
+
+.button1 {
+    color: #05A3A6;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #05A3A6; 
+    margin-left: 20px;
+    border-radius: 5px;
+}
+  
+.button1 {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 2px solid #05A3A6;
+}
+  
+.button1:hover {
+    background-color: #05A3A6;
+    color: #ffffff;
+}
