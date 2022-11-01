@@ -65,6 +65,13 @@ body {
     width: 1419px;
 }
 
+.bt {
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+}
+
+
 .text {
     padding-bottom: 10px;
     font-size: 30pt;
@@ -237,5 +244,20 @@ body {
     border-radius: 5px;
 }
 
-/* Single Movie Page CSS */
+/* Movie Watchlist Page CSS */
 
+.icon4,.icon5,.icon8,.icon7 {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 180px;
+    padding-left: 3px;
+    background-color: #e8891da9;
+    border-radius: 0;
+    opacity: 0;
+    transition-duration: 400ms;
+    color: black;
+}
+
+.icon4:hover,.icon5:hover,.icon8:hover,.icon7:hover {
+    opacity: 1;
+}
