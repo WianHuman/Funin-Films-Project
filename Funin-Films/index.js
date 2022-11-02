@@ -146,6 +146,12 @@ function login () {
                         sessionStorage.setItem("savedmovie1",currentid)
                         // alert(currentid)
                     })
+                    $("#smr" + h).click(function (){
+                        var mid = Movie.results[h].id
+                        var currentid = JSON.stringify(mid)
+                        sessionStorage.setItem("currentmovie",currentid)
+                        location.replace("Single Movie Page.html")
+                    })
                 }
             })
         });
@@ -169,6 +175,12 @@ function login () {
                         var currentid = JSON.stringify(mid)
                         sessionStorage.setItem("savedmovie2",currentid)
                         // alert(currentid)
+                    })
+                    $("#smp" + b).click(function (){
+                        var mid =  Movie.results[b].id
+                        var currentid = JSON.stringify(mid)
+                        sessionStorage.setItem("currentmovie",currentid)
+                        location.replace("Single Movie Page.html")
                     })
                 }
             })
@@ -756,7 +768,7 @@ $(document).ready(function (){
         })
         $("#smrating").text("Viewer rating: "+ Math.round(spmovie.vote_average))
         $("#smgenre").text("Genre: " + spmovie.genres[0].name)
-        
+
         var movies = null;
         $.ajax({
             type: "GET",
