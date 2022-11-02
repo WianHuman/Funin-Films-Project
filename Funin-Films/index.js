@@ -158,7 +158,7 @@ function login () {
                     // console.log(data)
                 }
             }).done(function(){
-                for( let b = 12; b < 18; b++){
+                for( let b = 12; b < 19; b++){
                     $("#picr" + b).attr("src", "https://image.tmdb.org/t/p/original/" + Movie.results[b].poster_path);
                     $("#morer" + b).text(Movie.results[b].release_date + " • ±120 min" + " • " + Movie.results[b].original_language + " • " + Math.round(Movie.results[b].vote_average));
                     $("#wlp" + b).click(function (){
@@ -710,6 +710,22 @@ function login () {
             $("#wlm11").text(movies4.release_date + " • ±120 min" + " • " + movies4.original_language + " • " + Math.round(movies4.vote_average));
         });
         
+    });
+
+    $("#d1").click(function(){
+        $(this).closest('#box01').empty();
+    });
+
+    $("#d2").click(function(){
+        $(this).closest('#box02').empty();
+    });
+
+    $("#d3").click(function(){
+        $(this).closest('#box03').empty();
+    });
+
+    $("#d4").click(function(){
+        $(this).closest('#box04').empty();
     });
 
 // Single Movue js
