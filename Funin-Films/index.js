@@ -44,8 +44,8 @@ var UsEr = [
         password: "221282"
     },
     {
-        username: "Cailyn Borman",
-        password: "123456"
+        username: "Cailyn Bornman",
+        password: "221394"
     },
     {
         username: "Animie van Rooyen",
