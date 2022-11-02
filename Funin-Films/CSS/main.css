@@ -1,7 +1,6 @@
 /* Navigation bar */
 body {
     background-color: #05A3A6;
-    font-family: "Martal Sans";
 }
 
 .logo {
@@ -250,7 +249,7 @@ body {
 .icon4,.icon5,.icon8,.icon7 {
     margin-left: 12px;
     margin-right: 12px;
-    padding-top: 190px;
+    padding-top: 180px;
     padding-left: 3px;
     background-color: #e8891da9;
     border-radius: 0;
@@ -323,21 +322,18 @@ body {
     position: relative;
     width: 350px;
     height: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .container2 {
     position: relative;
     width: 350px;
     height: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .container3 {
     position: relative;
     width: 350px;
     height: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
   
 .overlay {
@@ -366,20 +362,3 @@ body {
     opacity: 1;
 }
  
-.text {
-    color: #000000;
-    font-size: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.text:hover {
-    background-color: #E8891D;
-    opacity: 60%;
-    font-size: 16px;
-}
