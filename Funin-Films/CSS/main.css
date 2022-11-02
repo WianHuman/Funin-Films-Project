@@ -1,6 +1,7 @@
 /* Navigation bar */
 body {
     background-color: #05A3A6;
+    font-family: "Martal Sans";
 }
 
 .logo {
@@ -249,7 +250,7 @@ body {
 .icon4,.icon5,.icon8,.icon7 {
     margin-left: 12px;
     margin-right: 12px;
-    padding-top: 180px;
+    padding-top: 190px;
     padding-left: 3px;
     background-color: #e8891da9;
     border-radius: 0;

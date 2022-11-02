@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
         <script src="JS\jquery-3.6.0.min.js"></script>
-        <script src="index.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="CSS\main.css">
@@ -100,7 +99,11 @@
                 <p id="overview0" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: No Hyun-jin</h4>
                 <h4 id="rating0"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl0">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px; margin-top: 10px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl0" height="40" style="padding-bottom: 5px; cursor: pointer;">
               </div>
             </div>
             <div class="carousel-item">
@@ -110,7 +113,11 @@
                 <p id="overview3" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: Jeff Fowler</h4>
                 <h4 id="rating3"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl3">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl3" height="40" style="padding-top: 5px; cursor: pointer;">
               </div>
             </div>
             <div class="carousel-item active">
@@ -120,7 +127,11 @@
                 <p id="overview7" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: Maxwell Atoms</h4>
                 <h4 id="rating7"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl7">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl7" height="40" style="padding-top: 5px; cursor: pointer;">
               </div>
             </div>
             <div class="carousel-item">
@@ -130,7 +141,11 @@
                 <p id="overview9" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: Luke Armstrong</h4>
                 <h4 id="rating9"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl9">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl9" height="40" style="padding-top: 5px; cursor: pointer;">
               </div>
             </div>
             <div class="carousel-item">
@@ -140,7 +155,11 @@
                 <p id="overview10" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: Trent Correy, Dan Abraham</h4>
                 <h4 id="rating10"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl10">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl10" height="40" style="padding-top: 5px; cursor: pointer;">
               </div>
             </div>
             <div class="carousel-item">
@@ -150,7 +169,11 @@
                 <p id="overview14" style="font-size: 16pt;"></p>
                 <h4 id="director">Director: Liam O'Donnell</h4>
                 <h4 id="rating14"></h4>
-                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl14">
+                <button type="button" style="width: 160px; height: 40px; border-radius: 20px; border: none; padding: 5px;">
+                  <h4 style="text-align: left;">Play Movie</h4>
+                  <img src="Images\Icons\play.png" alt="" style="margin-top: -70px; margin-left: 120px;">
+                </button>
+                <img src="Images\Icons\add_to_watch_list.png" alt="" id="wl14" height="40" style="padding-top: 5px; cursor: pointer;">
               </div>
             </div>
           </div>
@@ -188,8 +211,8 @@
                 <img class="card-img" id="pic0" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlr0" style-="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
                     <h6 class="card-title" id="more0" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
@@ -198,8 +221,8 @@
                 <img class="card-img" id="pic1" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl1">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlr1" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
                     <h6 class="card-title" id="more1" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
@@ -208,8 +231,8 @@
                 <img class="card-img" id="pic2" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl2">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlr2" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" stylke="cursor: pointer;"><br>
                     <h6 class="card-title" id="more2" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
@@ -218,8 +241,8 @@
                 <img class="card-img" id="pic3" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl3">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlr3" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
                     <h6 class="card-title" id="more3" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
@@ -233,22 +256,12 @@
             <h2 class="text2">Top Rated</h2>
             <div class="row justify-content-evenly mb-5" style="height: 240px;">
               <div class="card col-sm-2" style="background-color: #05A3A6; border: none;">
-                <img class="card-img" id="picr12" alt="Card image cap" style="border-radius: 0;" height="317">
-                <div>
-                  <div class="card-img-overlay iconl4">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
-                    <h6 class="card-title" id="morer12" style="text-align: right; font-size: 9pt; padding-top: 5px; font-weight: bold;"></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card col-sm-2" style="background-color: #05A3A6; border: none;">
                 <img class="card-img" id="picr14" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl5">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
-                    <h6 class="card-title" id="morer14" style="text-align: right; font-size: 9pt; padding-top: 5px; font-weight: bold;"></h6>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlp14" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
+                    <h6 class="card-title" id="morer14" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
               </div>
@@ -256,9 +269,9 @@
                 <img class="card-img" id="picr17" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl8">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
-                    <h6 class="card-title" id="morer17" style="text-align: right; font-size: 9pt; padding-top: 5px; font-weight: bold;"></h6>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlp17" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
+                    <h6 class="card-title" id="morer17" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
               </div>
@@ -266,9 +279,19 @@
                 <img class="card-img" id="picr16" alt="Card image cap" style="border-radius: 0;" height="317">
                 <div>
                   <div class="card-img-overlay iconl7">
-                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30">
-                    <img src="Images\Icons\more_inf_1.png" alt="" height="30"><br>
-                    <h6 class="card-title" id="morer16" style="text-align: right; font-size: 9pt; padding-top: 5px; font-weight: bold;"></h6>
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlp16" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
+                    <h6 class="card-title" id="morer16" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-sm-2" style="background-color: #05A3A6; border: none;">
+                <img class="card-img" id="picr18" alt="Card image cap" style="border-radius: 0;" height="317">
+                <div>
+                  <div class="card-img-overlay iconl4">
+                    <img src="Images\Icons\add_to_watch_list.png" alt="" height="30" id="wlp13" style="cursor: pointer;">
+                    <img src="Images\Icons\more_inf_1.png" alt="" height="30" style="cursor: pointer;"><br>
+                    <h6 class="card-title" id="morer18" style="text-align: right; font-size: 10pt; padding-top: 5px; font-weight: bold;"></h6>
                   </div>
                 </div>
               </div>
@@ -277,7 +300,7 @@
   
         <div id="A_U" class="row">
             <h3 class="text3">About Us</h3>
-            <p style="margin-left: 10px; font-weight: bold; color: black;">
+            <p style="margin-left: 10px; font-weight: bold; color: black; font-size: 13pt;">
               Funin Films is the streaming home for all the movies. From new releases 
               to your favorite classics and exclusive Originals, there's something for everyone.
               Thousands of hours of movies & originals from the world's greatest storytellers. 
@@ -290,9 +313,9 @@
                 <div>
                   <div class="card-img-overlay iconl7">
                     <h5>Mariné du Plessis</h5>
-                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;"></a>
+                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
                     <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" height="30"></a>
                   </div>
                 </div>
@@ -302,9 +325,9 @@
                 <div>
                   <div class="card-img-overlay iconl7">
                     <h5>Wian Human</h5>
-                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;"></a>
+                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
                     <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" height="30"></a>
                   </div>
                 </div>
@@ -314,9 +337,9 @@
                 <div>
                   <div class="card-img-overlay iconl7">
                     <h5>Thato Shilubane</h5>
-                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;"></a>
+                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
                     <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" height="30"></a>
                   </div>
                 </div>
@@ -326,9 +349,9 @@
                 <div>
                   <div class="card-img-overlay iconl7">
                     <h5>Caylin Borman</h5>
-                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;"></a>
+                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
                     <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" height="30"></a>
                   </div>
                 </div>
@@ -338,9 +361,9 @@
                 <div>
                   <div class="card-img-overlay iconl7">
                     <h5>Animie van Rooyen</h5>
-                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;"></a>
-                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;"></a>
+                    <a href="https://www.facebook.com/"><img src="Images\Icons\facebook.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="Images\Icons\Instagram.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
+                    <a href="https://www.linkedin.com/learning"><img src="Images\Icons\linkedin.png" alt="" height="30" style="margin-right: 20px;cursor: pointer;"></a>
                     <a href="https://twitter.com/?lang=en"><img src="Images\Icons\twitter.png" alt="" height="30"></a>
                   </div>
                 </div>
@@ -374,6 +397,6 @@
       </div>
       
         
-      <script src="JS\index.js"></script>
+      <script src="index.js"></script>
     </body>
 </html>
