@@ -59,9 +59,6 @@ function login () {
     var password = document.getElementById("pass-word1").value;
     var usercheck = false
 
-
-    //UsEr is an array for testing, to be replaced with an actual array
-
     for (let i = 0; i < UsEr.length; i++) {
         if (name == UsEr[i].username) {
             if (password == UsEr[i].password) {
@@ -115,6 +112,12 @@ function login () {
                         var mid = Movie.results[t].id
                         var currentid = JSON.stringify(mid)
                         sessionStorage.setItem("savedmovie",currentid)
+                    })
+                    $("#pl" + t).click(function (){
+                        var mid = Movie.results[t].id
+                        var currentid = JSON.stringify(mid)
+                        sessionStorage.setItem("currentmovie",currentid)
+                        location.replace("Single Movie Page.html")
                         // alert(currentid)
                     })
                 }
@@ -171,7 +174,7 @@ function login () {
             })
         });
 
-    // API for adding username to page
+    // JS for adding username to page
     $(document).ready(function (){
         var saveduser = JSON.parse(sessionStorage.getItem("loggedin"))
         $("#welcome").text("Welcome " + saveduser.username)
@@ -197,8 +200,8 @@ function login () {
             $("#wll" + i).click(function (){
                 var mid = movies.results[i].id
                 var currentid = JSON.stringify(mid)
-                sessionStorage.setItem("savedmovie3",currentid)
-                // alert(currentid)
+                // sessionStorage.setItem("savedmovie3",currentid)
+                alert(currentid)
             })
             }
         });
@@ -386,7 +389,7 @@ function login () {
             })
         }
 
-    // Filter for Spesific year
+    // Filter for Specific year
         function gen2(){
             $(document).ready(function(){
                 var movies = null;
@@ -728,5 +731,49 @@ function login () {
         $(this).closest('#box04').empty();
     });
 
-// Single Movue js
+// Single Movie js
+
+$(document).ready(function (){
+    var mvid = JSON.parse(sessionStorage.getItem("currentmovie"))
+    // alert(mvid)
+
+    let spcall = "https://api.themoviedb.org/3/movie/" + mvid + "?api_key=8f58d34ff6d61c20b5d13e1290c1a937";
+    $.ajax({
+        type: "GET",
+        url: spcall,
+        success: function(data){
+            spmovie = data
+        }
+    }).done(function (){
+        console.log(spmovie)
+        $("#smdesc").text(spmovie.overview)
+        $("#smtitle").text(spmovie.title)
+        $("#sminfo").text(spmovie.release_date + " • " + spmovie.runtime + " min" + " • " + spmovie.original_language + " • " + Math.round(spmovie.vote_average))
+        $(".white_box").css({
+            "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2);",
+            "background-image":"url(https://image.tmdb.org/t/p/original/" + spmovie.backdrop_path +")",
+            "background-size":"cover"
+        })
+        $("#smrating").text("Viewer rating: "+ Math.round(spmovie.vote_average))
+        $("#smgenre").text("Genre: " + spmovie.genres[0].name)
+        
+        var movies = null;
+        $.ajax({
+            type: "GET",
+            url: "https://api.themoviedb.org/3/discover/movie?api_key=8f58d34ff6d61c20b5d13e1290c1a937&page=1",
+            success: function(data){
+                movies = data;
+                console.log(data)
+            }
+        }).done(function(){
+            for (let i = 0; i < 3; i++) {
+                $("#mlt" + i).css({
+                    "background-image":"url(https://image.tmdb.org/t/p/original/" + movies.results[i].poster_path +")",
+                    "background-size":"cover"
+                })
+                
+            }
+        })
+    })
+})
 
